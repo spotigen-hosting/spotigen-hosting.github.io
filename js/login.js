@@ -1,4 +1,4 @@
-const url = "http://127.0.0.1:5500";
+const url = "https://spotigen.evanokeefe.com";
 
 let clientID = 'efc74990edc848b884ad44e7433ff771';
 let params = new URLSearchParams(window.location.search);
