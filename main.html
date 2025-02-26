@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/ico" href="/img/ico.ico">
+</head>
+<body>
+    <div class="popup" id = "settings_popup">
+        <div id="settings">
+            <button id="close_settings">X</button>
+            <h1 id="settings_title">Settings For Juice WRLD:</h1>
+            <img id="settings_photo" src="img/placeholder.jpeg" alt="Profile Picture">
+            <div id="checkbox_container">
+                <div class="column">
+                    <label class="settings_label"><input type="checkbox" id="most_popular" class="settings_option"> Most Popular Songs</label><br>
+                    <label class="settings_label"><input type="checkbox" id="random" class="settings_option"> Random Songs</label><br>
+                    <label class="settings_label"><input type="checkbox" id="similar_artists" class="settings_option"> Similar Artists</label>
+                </div>
+                <div class="column">
+                    <label class="settings_label"><input type="checkbox" id="same_genre" class="settings_option"> Same (Main) Genre</label><br>
+                    <label class="settings_label"><input type="checkbox" id="most_recent" class="settings_option"> Recent Releases</label><br>
+                    <label class="settings_label"><input type="checkbox" id="featured" class="settings_option"> Featured On</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="generating_popup">
+        <div id="generating">
+            <h1 id = "generating_title">Generating Playlist</h1>
+            <p id="generating_info"></p>
+        </div>
+    </div>
+    <div id = "top">
+        <img id="pfp" src="img/placeholder.jpeg" alt="Profile Picture">
+        <h1 id="title">Logged In</h1>
+        <button id="logout" onclick="window.location.href='index.html'">Logout</button>
+    </div>
+
+    <div id = "logo_container">
+        <a href="index.html">
+            <img id="logo" src="img/logo.png" alt="Logo" style="width: 300px; height: auto;">
+        </a></a>
+    </div>
+    
+    <div id = "input_container">
+        <input type="text" id="text_input" placeholder="Search For Artist(s)" autocomplete="off">
+    </div>
+    <div id="artists"></div>
+
+    <div id="generate_container">
+        <button id="generate">Generate</button>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+
+
+
+</body>
+<script src="js/main.js"></script>
+</html>
